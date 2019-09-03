@@ -27,20 +27,20 @@ const onRequest = (request, response) => {
       htmlHandler.getPage2(request, response);
       break;
     case '/hello':
-        textHandler.getHello(request, response);
-        break;
+      textHandler.getHello(request, response);
+      break;
     case '/time':
-        textHandler.getTime(request, response);
-        break;
+      textHandler.getTime(request, response);
+      break;
     case '/helloJSON':
-        jsonHandler.getHelloJSON(request, response);
-        break;
+      jsonHandler.getHelloJSON(request, response);
+      break;
     case '/timeJSON':
-        jsonHandler.getTimeJSON(request, response);
-        break;
+      jsonHandler.getTimeJSON(request, response);
+      break;
     case '/dankmemes':
-        imgHandler.getSponge(request, response);
-        break;
+      imgHandler.getSponge(request, response);
+      break;
     default:
       htmlHandler.getIndex(request, response);
       break;
