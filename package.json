@@ -1,0 +1,26 @@
+{
+  "name": "http-homework",
+  "version": "1.0.0",
+  "description": "simple http homework for week 2",
+  "main": "./src/server.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "pretest": "eslint ./src --fix",
+    "test": "echo \"Tests complete qB)\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/celeste1337/Simple-HTTP-Assignment-Start.git"
+  },
+  "author": "Celeste Yost",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/celeste1337/Simple-HTTP-Assignment-Start/issues"
+  },
+  "homepage": "https://github.com/celeste1337/Simple-HTTP-Assignment-Start#readme",
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}
