@@ -5,6 +5,7 @@ const http = require('http');
 const htmlHandler = require('./htmlResponses.js');
 const textHandler = require('./textResponses.js');
 const jsonHandler = require('./jsonResponses.js');
+const imgHandler = require('./imageResponses.js');
 
 // now we make a port, cant do 80 for http or 443 for https cos they are reserved!! !!
 // 3000 is a good dev port
@@ -36,6 +37,9 @@ const onRequest = (request, response) => {
         break;
     case '/timeJSON':
         jsonHandler.getTimeJSON(request, response);
+        break;
+    case '/dankmemes':
+        imgHandler.getSponge(request, response);
         break;
     default:
       htmlHandler.getIndex(request, response);
