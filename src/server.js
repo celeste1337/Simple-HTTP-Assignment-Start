@@ -49,3 +49,6 @@ const onRequest = (request, response) => {
 // creates server, takes in the specified function, then accepts traffic
 http.createServer(onRequest).listen(port);
 console.log(`listening on 127.0.01: ${port}`);
+
+//test heroku i think i goofed it up
+console.log("something went right");
