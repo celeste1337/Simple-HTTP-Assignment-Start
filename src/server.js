@@ -18,6 +18,17 @@ const port = process.env.PORT || process.env.NODE_PORT || 3000;
 // request and response is passed in so we can edit le response
 const onRequest = (request, response) => {
   console.log(request.url);
+  switch (request.url) {
+    case '/':
+      htmlHandler.getIndex(request, response);
+      break;
+    case '/page2':
+      htmlHandler.getPage2(request, response);
+      break;
+    default:
+      htmlHandler.getIndex(request, response);
+      break;
+  }
 };
 // creates server, takes in the specified function, then accepts traffic
 http.createServer(onRequest).listen(port);
